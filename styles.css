@@ -76,6 +76,178 @@ body {
     color: var(--primary-color);
 }
 
+/* Intro Section */
+.intro {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(255, 0, 110, 0.08) 100%);
+    border-bottom: 2px solid var(--border-color);
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 0, 110, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(0, 212, 255, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.intro-content .name {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInDown 0.8s ease;
+    font-weight: 700;
+}
+
+.intro-content .title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease 0.1s backwards;
+}
+
+.intro-content .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+.intro-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    animation: fadeInUp 0.8s ease 0.3s backwards;
+}
+
+/* Meet Axle Section */
+.meet-axle {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.meet-axle::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.05) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.meet-axle .container {
+    position: relative;
+    z-index: 1;
+}
+
+.meet-axle-content {
+    position: relative;
+    z-index: 1;
+}
+
+.meet-axle-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.meet-axle-content .lead {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+.quick-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.overview-item {
+    background: var(--card-bg);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.overview-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.overview-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.overview-item p {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -149,6 +321,45 @@ body {
 .projects {
     padding: 5rem 0;
     background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.06) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.projects .container {
+    position: relative;
+    z-index: 1;
 }
 
 .projects h2 {
@@ -263,6 +474,45 @@ body {
     padding: 5rem 0;
     background: var(--bg-darker);
     border-top: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.02) 99px,
+            rgba(0, 212, 255, 0.02) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.02) 99px,
+            rgba(0, 212, 255, 0.02) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.04) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.about .container {
+    position: relative;
+    z-index: 1;
 }
 
 .about h2 {
@@ -283,13 +533,61 @@ body {
     padding: 5rem 0;
     background: var(--bg-dark);
     border-top: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.05) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
 }
 
 .contact h2 {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     color: var(--primary-color);
+}
+
+.contact-intro {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
 }
 
 .contact-methods {
@@ -361,6 +659,23 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .intro-content .name {
+        font-size: 3.5rem;
+    }
+
+    .intro-content .title {
+        font-size: 1.6rem;
+    }
+
+    .intro-content .subtitle {
+        font-size: 1rem;
+    }
+
+    .intro-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -381,16 +696,33 @@ body {
 
     .projects h2,
     .about h2,
-    .contact h2 {
+    .contact h2,
+    .meet-axle-content h2 {
         font-size: 2rem;
     }
 
     .contact-methods {
         grid-template-columns: 1fr;
     }
+
+    .quick-overview {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
+    .intro-content .name {
+        font-size: 2.5rem;
+    }
+
+    .intro-content .title {
+        font-size: 1.3rem;
+    }
+
+    .intro-content .subtitle {
+        font-size: 0.95rem;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -407,7 +739,8 @@ body {
 
     .projects h2,
     .about h2,
-    .contact h2 {
+    .contact h2,
+    .meet-axle-content h2 {
         font-size: 1.5rem;
     }
 }
