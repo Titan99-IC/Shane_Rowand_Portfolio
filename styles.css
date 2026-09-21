@@ -364,10 +364,29 @@ body {
 }
 
 .projects-overview h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.projects-overview h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
 
 .projects-overview .lead {
@@ -426,10 +445,29 @@ body {
 }
 
 .meet-axle h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.meet-axle h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
 
 .meet-axle .lead {
@@ -488,10 +526,29 @@ body {
 }
 
 .woodworking h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.woodworking h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
 
 .woodworking .lead {
@@ -550,10 +607,29 @@ body {
 }
 
 .seatbelt-tracker h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.seatbelt-tracker h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
 
 .seatbelt-tracker .lead {
