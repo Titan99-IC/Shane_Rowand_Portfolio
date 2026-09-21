@@ -317,6 +317,254 @@ body {
     transform: translateY(-2px);
 }
 
+/* Projects Overview Section */
+.projects-overview {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-overview::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.05) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.projects-overview .container {
+    position: relative;
+    z-index: 1;
+}
+
+.projects-overview h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.projects-overview .lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Meet Axle Section - Updated */
+.meet-axle {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.meet-axle::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.05) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.meet-axle .container {
+    position: relative;
+    z-index: 1;
+}
+
+.meet-axle h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.meet-axle .lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+/* Woodworking Section */
+.woodworking {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.woodworking::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.05) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.woodworking .container {
+    position: relative;
+    z-index: 1;
+}
+
+.woodworking h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.woodworking .lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+/* Seatbelt Tracker Section */
+.seatbelt-tracker {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.seatbelt-tracker::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.05) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.seatbelt-tracker .container {
+    position: relative;
+    z-index: 1;
+}
+
+.seatbelt-tracker h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.seatbelt-tracker .lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
 /* Projects Section */
 .projects {
     padding: 5rem 0;
