@@ -10,6 +10,36 @@
     --border-color: #2a3f5f;
 }
 
+/* Woodwork Images Styles */
+.woodwork-images {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.woodwork-img-container {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.woodwork-img-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+}
+
+.woodwork-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
