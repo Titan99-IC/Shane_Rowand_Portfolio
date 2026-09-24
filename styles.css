@@ -10,6 +10,124 @@
     --border-color: #2a3f5f;
 }
 
+/* Custom Projects Section */
+.custom-projects {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-projects::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 99px,
+            rgba(0, 212, 255, 0.03) 99px,
+            rgba(0, 212, 255, 0.03) 100px
+        ),
+        /* Circuit nodes */
+        radial-gradient(circle, rgba(0, 212, 255, 0.05) 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.custom-projects .container {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-projects h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.custom-projects .lead {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+.desktop-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.desktop-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+}
+
+.desktop-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.pc-specs h4,
+.deck-specs h4 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.pc-specs ul,
+.deck-specs ul {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.pc-specs li,
+.deck-specs li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.pc-specs li::before,
+.deck-specs li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* Woodwork Images Styles */
 .woodwork-images {
     display: flex;
@@ -276,6 +394,158 @@ body {
 .overview-item p {
     color: var(--text-muted);
     line-height: 1.7;
+}
+
+/* Axle Development & Project Details */
+.axle-development {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.axle-development h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.axle-development ul {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.axle-development li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.axle-development li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hexapod-ai-integration {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.hexapod-ai-integration h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.hexapod-ai-integration ul {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.hexapod-ai-integration li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.hexapod-ai-integration li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Project Card Styles */
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.project-header {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 0, 110, 0.05));
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-header h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.project-content {
+    padding: 2rem;
+}
+
+.project-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.architecture-details h4,
+.hexapod-specs h4 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.architecture-details ul,
+.hexapod-specs ul {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.architecture-details li,
+.hexapod-specs li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.architecture-details li::before,
+.hexapod-specs li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hexapod-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hexapod-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 /* Hero Section */
